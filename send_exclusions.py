@@ -30,7 +30,7 @@ impossible_pairs = [
 
 # if you want to assign a second set of impossible pairs for the same person as above.
 another_impossible_pair = [
-     ['','']
+     ['Oprah','John']
 ]
 
 ####################3
