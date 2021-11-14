@@ -9,6 +9,7 @@ from sendgrid.helpers.mail import *
 
 sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
 
+# here is the list of all players and their email addresses:
 allnames =[
 
         ['John','john@gmail.com'],
@@ -20,11 +21,14 @@ allnames =[
 
     ]
 
+# the first set of impossible pairs. Note: these are bidirectional, so name1 cannot be assigned to name2 and name2 cannot be assigned to name1
+# IMPORTANT: the impossible pairs must be mutually exclusive (each name can only appear once). If you want to assign a second impossible relationship for the same person, use the next list.
 impossible_pairs = [
     ['John','Ringo'],
     ['Oprah','Paul']
 ]
 
+# if you want to assign a second set of impossible pairs for the same person as above.
 another_impossible_pair = [
      ['','']
 ]
